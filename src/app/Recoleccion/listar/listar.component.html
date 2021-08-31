@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>
+                Recolecciones
+            </h3>
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Barrio</th>
+                            <th>Comuna</th>
+                            <th>Dirección</th>
+                            <th>Cliente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let recoleccion of recolecciones" class="text-center">
+                            <td>{{recoleccion.id}}</td>
+                            <td>{{recoleccion.barrio}}</td>
+                            <td>{{recoleccion.comuna}}</td>
+                            <td>{{recoleccion.direccion}}</td>
+                            <td>{{recoleccion.cliente}}</td>
+                            <td>
+                                <button (click)="Eliminar(recoleccion)" class="btn btn-warning">
+                                    Eliminar
+                                </button>
+                                <button (click)="Editar(recoleccion)" class="btn btn-danger" style="margin-left: 10px;">
+                                    Editar
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

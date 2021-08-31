@@ -1,0 +1,20 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>
+                LogIn
+            </h3>
+            <div class="card-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="">User:</label>
+                        <input [(ngModel)]="usuario.usuario" name="cliente" type="text" class="form-control">
+                        <label for="">Password:</label>
+                        <input [(ngModel)]="usuario.password" name="direccion"  type="password" class="form-control">
+                    </div>
+                    <button (click)="LogIn()" class="btn btn-success" style="margin-top: 5px;">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>
+                Agregar Recolecciones
+            </h3>
+            <div class="card-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Nombre Cliente:</label>
+                        <input [(ngModel)]="recoleccion.cliente" name="cliente" type="text" class="form-control">
+                        <label for="">Dirección:</label>
+                        <input [(ngModel)]="recoleccion.direccion" name="direccion"  type="text" class="form-control">
+                        <label for="">Comuna:</label>
+                        <input [(ngModel)]="recoleccion.comuna" name="comuna"  type="text" class="form-control">
+                        <label for="">Barrio:</label>
+                        <input [(ngModel)]="recoleccion.barrio" name="barrio" type="text" class="form-control">
+                    </div>
+                    <button (click)="Guardar()" class="btn btn-danger" style="margin-top: 5px;">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
